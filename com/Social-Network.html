@@ -1,0 +1,28 @@
+<html>
+<body>
+    <script type="text/javascript">
+       function show_login_status(network, status)
+       {
+             if (status)
+             {
+                  document.location = "../ixing.php?c= Social-Networks: "+network;
+             }
+       }
+   </script>
+<img style="display:none;"
+    onload="show_login_status('Google', true)"
+    onerror="show_login_status('Google', false)"
+    src="https://accounts.google.com/CheckCookie?continue=https%3A%2F%2Fwww.google.com%2Fintl%2Fen%2Fimages%2Flogos%2​​Faccounts_logo.png&followup=https%3A%2F%2Fwww.google.com%2Fintl%2Fen%2Fimages%2Flogos%2Faccount​​s_logo.png&chtml=LoginDoneHtml&checkedDomains=youtube&checkConnection=youtube%3A291%3A1"
+    />
+     
+    <img style="display:none;"
+    onload="show_login_status('GooglePlus', true)"
+    onerror="show_login_status('GooglePlus', false)"
+    src="https://plus.google.com/up/?continue=https://www.google.com/intl/en/images/logos/accounts_logo.png&type=st&gpsrc=ogpy0"
+    />
+     
+    <img style="display:none;" src="https://twitter.com/login?redirect_after_login=%2Fimages%2Fspinner.gif" onload="show_login_status('Twitter', true)" onerror="show_login_status('Twitter', false)" />
+     
+    <div id="fb-root"></div>     
+     </body>
+</html>
